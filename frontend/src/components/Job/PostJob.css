@@ -1,0 +1,87 @@
+.job_post.page {
+  background: linear-gradient(90deg, #6a11cb, #2575fc) !important;
+  padding: 4rem 0;
+  min-height: 100vh;
+}
+
+.job_post h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 3rem;
+}
+
+.job_post .card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.job_post .card-body {
+  padding: 3rem;
+}
+
+.job_post .form-outline {
+  position: relative;
+}
+
+.job_post .form-control-lg,
+.job_post .form-select-lg {
+  border-radius: 0.25rem;
+  border: 1px solid #ced4da;
+  padding: 0.75rem 1.25rem;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.job_post .form-control-lg:focus,
+.job_post .form-select-lg:focus {
+  border-color: #2575fc;
+  box-shadow: 0 0 8px rgba(37, 117, 252, 0.3);
+  outline: none;
+}
+
+
+.job_post .btn-primary {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  border: none;
+  padding: 0.75rem 2rem;
+  font-weight: 500;
+  border-radius: 0.25rem;
+  transition: all 0.3s ease;
+}
+
+.job_post .btn-primary:hover {
+  background: linear-gradient(90deg, #5a0fb0, #1e63d8);
+  transform: translateY(-2px);
+}
+
+.job_post .text-muted {
+  font-size: 0.9rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+  .job_post h1 {
+    font-size: 2rem;
+  }
+
+  .job_post .card-body {
+    padding: 2rem;
+  }
+
+  .job_post .form-control-lg,
+  .job_post .form-select-lg {
+    font-size: 1rem;
+  }
+
+  .job_post .form-label {
+    font-size: 0.85rem;
+  }
+
+  .job_post .form-control-lg:placeholder-shown ~ .form-label {
+    top: 0.5rem;
+    font-size: 1rem;
+  }
+}

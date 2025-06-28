@@ -1,0 +1,32 @@
+
+.accepted{
+   background-color:rgb(51, 109, 38);
+   padding: 4px 12px;
+   color: white;
+   border-radius: 50px;
+   font-weight: 500;
+}
+.rejected{
+   background-color:rgb(196, 41, 2);
+   padding: 4px 12px;
+   color: white;
+   border-radius: 50px;
+   font-weight: 500;
+}
+.viewed{
+   background-color:rgb(186, 169, 14);
+   padding: 4px 12px;
+   color: white;
+   border-radius: 50px;
+   font-weight: 500;
+}
+.submitted{
+   background-color:rgb(4, 113, 168);
+   padding: 4px 12px;
+   color: white;
+   border-radius: 50px;
+   font-weight: 500;
+   
+  }
+
+

@@ -1,0 +1,101 @@
+.heroSection {
+  background: linear-gradient(90deg, #6a11cb, #2575fc) !important;
+  padding: 5rem 0;
+}
+
+.heroSection .title h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.heroSection .title .lead {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+}
+
+.heroSection .btn-primary {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 0.25rem;
+  transition: all 0.3s ease;
+}
+
+.heroSection .btn-primary:hover {
+  background: linear-gradient(90deg, #5a0fb0, #1e63d8);
+  transform: translateY(-2px);
+}
+
+.heroSection .image img {
+  max-width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.heroSection .image img:hover {
+  transform: scale(1.05);
+}
+
+.heroSection .details {
+  margin-top: 4rem;
+}
+
+.heroSection .details .card {
+  background: #ffffff;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.heroSection .details .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.heroSection .details .card-body {
+  padding: 2rem;
+}
+
+.heroSection .details .icon {
+  color: #2575fc;
+  margin-bottom: 1rem;
+}
+
+.heroSection .details h5 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.heroSection .details .text-muted {
+  font-size: 1rem;
+  color: #666 !important;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .heroSection .title h1 {
+    font-size: 2.5rem;
+  }
+
+  .heroSection .image {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .heroSection .title h1 {
+    font-size: 2rem;
+  }
+
+  .heroSection .title .lead {
+    font-size: 1rem;
+  }
+
+  .heroSection .details .card {
+    margin-bottom: 1.5rem;
+  }
+}

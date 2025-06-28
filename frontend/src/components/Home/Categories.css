@@ -1,0 +1,84 @@
+.companies {
+  background: linear-gradient(90deg, #6a11cb, #2575fc) !important;
+  padding: 4rem 0;
+}
+
+.companies h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 3rem;
+}
+
+.companies .card {
+  background: #ffffff;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.companies .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.companies .card-body {
+  padding: 2rem;
+}
+
+.companies .content {
+  display: flex;
+  align-items: center;
+}
+
+.companies .icon {
+  color: #2575fc;
+  transition: all 0.3s ease;
+}
+
+.companies .card:hover .icon {
+  transform: scale(1.2);
+}
+
+.companies .text h5 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.companies .text .text-muted {
+  font-size: 0.9rem;
+  color: #666 !important;
+}
+
+.companies .btn-primary {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  border: none;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+  border-radius: 0.25rem;
+  transition: all 0.3s ease;
+}
+
+.companies .btn-primary:hover {
+  background: linear-gradient(90deg, #5a0fb0, #1e63d8);
+  transform: translateY(-2px);
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+  .companies h3 {
+    font-size: 2rem;
+  }
+
+  .companies .card {
+    margin-bottom: 1.5rem;
+  }
+
+  .companies .text h5 {
+    font-size: 1.3rem;
+  }
+
+  .companies .text .text-muted {
+    font-size: 0.85rem;
+  }
+}

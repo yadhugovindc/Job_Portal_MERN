@@ -1,0 +1,109 @@
+.application.page {
+  background: linear-gradient(90deg, #6a11cb, #2575fc) !important;
+  padding: 4rem 0;
+  min-height: 100vh;
+}
+
+.application h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 3rem;
+}
+
+.application .card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.application .card-body {
+  padding: 3rem;
+}
+
+.application .form-outline {
+  position: relative;
+}
+
+.application .form-control-lg {
+  border-radius: 0.25rem;
+  border: 1px solid #ced4da;
+  padding: 0.75rem 1.25rem;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.application .form-control-lg:focus {
+  border-color: #2575fc;
+  box-shadow: 0 0 8px rgba(37, 117, 252, 0.3);
+  outline: none;
+}
+.application .form-label {
+  margin-left: 10px;
+}
+
+/* .application .form-label {
+  position: absolute;
+  top: -0.5rem;
+  left: 1rem;
+  background: #ffffff;
+  padding: 0 0.25rem;
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: 500;
+  transition: all 0.3s ease;
+} */
+
+/* .application .form-control-lg:not(:placeholder-shown) ~ .form-label,
+.application .form-control-lg:focus ~ .form-label {
+  top: -0.5rem;
+  font-size: 0.9rem;
+}
+
+.application .form-control-lg:placeholder-shown ~ .form-label {
+  top: 0.75rem;
+  font-size: 1.1rem;
+} */
+
+.application .btn-primary {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  border: none;
+  padding: 0.75rem 2rem;
+  font-weight: 500;
+  border-radius: 0.25rem;
+  transition: all 0.3s ease;
+}
+
+.application .btn-primary:hover {
+  background: linear-gradient(90deg, #5a0fb0, #1e63d8);
+  transform: translateY(-2px);
+}
+
+.application .text-muted {
+  font-size: 0.9rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+  .application h1 {
+    font-size: 2rem;
+  }
+
+  .application .card-body {
+    padding: 2rem;
+  }
+
+  .application .form-control-lg {
+    font-size: 1rem;
+  }
+
+  .application .form-label {
+    font-size: 0.85rem;
+  }
+
+  .application .form-control-lg:placeholder-shown ~ .form-label {
+    top: 0.5rem;
+    font-size: 1rem;
+  }
+}
