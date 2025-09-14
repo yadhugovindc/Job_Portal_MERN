@@ -1,6 +1,6 @@
 const Application = require("../models/applicationSchema");
 const Job = require("../models/jobSchema");
-const { rawListeners } = require("../models/userSchema");
+
 
 exports.submitApplication = async (req, res) => {
   console.log("inside submitappli controller");

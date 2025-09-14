@@ -30,3 +30,13 @@ exports.getAllApplication=async(req,res)=>{
     
   }
 }
+
+exports.deleteEmployees=async(req,res)=>{
+  try {
+  const {id}=req.params;
+  const item=await users.findByIdAndDelete(id);
+  res.status(200).json("deleted successfully");
+  } catch (error) {
+    
+  }
+}

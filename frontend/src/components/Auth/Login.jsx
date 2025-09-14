@@ -59,11 +59,11 @@ const Login = () => {
 
 
   return (
-    <section className="auth-page py-5">
+    <section className=" vh-100 py-5" style={{ background: 'linear-gradient(135deg, #4e54c8, #8f94fb)' }}>
       <div className="container">
         <div className="row justify-content-center align-items-center">
           <div className="col-lg-6 col-md-8">
-            <div className="card shadow-lg border-0">
+            <div className="card border-0">
               <div className="card-body p-5">
                 <div className="text-center mb-4">
                   <h3 className="fw-bold text-primary">Login</h3>
@@ -153,7 +153,7 @@ const Login = () => {
             <img
               src="https://img.freepik.com/free-vector/mobile-login-concept-illustration_114360-83.jpg?ga=GA1.1.1211554208.1733224352&semt=ais_hybrid&w=740"
               alt="Register Illustration"
-              className="img-fluid"
+              className="img-fluid rounded-2"
               style={{ maxWidth: "80%" }}
             />
           </div>

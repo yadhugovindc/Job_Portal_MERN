@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
-
 import "./JobDetails.css";
 import { Appcontext } from "../../contextApi/AppContext";
 import axios from "axios";
@@ -10,25 +9,23 @@ const JobDetails = () => {
   const { id } = useParams();
   const navigateTo = useNavigate();
   const [oneJob,setOneJob]=useState()
- const {isAuth,setIsAuth}=useContext(Appcontext);
- const token=sessionStorage.getItem("token");
+  const {isAuth}=useContext(Appcontext);
+  const token=sessionStorage.getItem("token");
   const reqheader={
       "Content-Type":'application/json',
       "Authorization":`Bearer ${token}`
      }
 
- const userRole=JSON.parse(sessionStorage.getItem('user'))
- const role=userRole.role;
+//  const userRole=JSON.parse(sessionStorage.getItem('user'))
+//  const role=userRole.role;
 
  const fetchSingleJob=async()=>{
   const res=await axios.get(`http://localhost:3000/api/job/${id}`,{
     headers:reqheader
   });  
   if(res.data.job){
-     setOneJob(res.data.job);
-     
+     setOneJob(res.data.job); 
   }
-
  }
 
  useEffect(()=>{

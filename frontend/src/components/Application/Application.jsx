@@ -6,7 +6,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import "./Application.css";
 import { Appcontext } from "../../contextApi/AppContext";
 import { toast } from "react-toastify";
-import { useRef } from "react";
+
 
 const Application = () => {
   const {isAuth,setIsAuth,user}=useContext(Appcontext);
@@ -88,7 +88,7 @@ const Application = () => {
     <section className="application page py-5">
       <div className="container">
         <h1 className="text-center mb-5 text-white">Application Form</h1>
-        <div className="card shadow-lg border-0">
+        <div className="card shadow-lg border-0  col-12">
           <div className="card-body p-5">
             <form onSubmit={handleApplication} className="form-floating">
               <div className="row mb-4">

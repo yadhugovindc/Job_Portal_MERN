@@ -48,6 +48,6 @@ router.put('/api/updateapplication/:id',jwtmiddleware.isAuth,multermiddleware.up
 router.get('/api/getallusers',adminController.getAllUser)
 router.get('/api/getalljobs',adminController.getAllUser)
 router.get('/api/getallapplications',adminController.getAllApplication)
-
+router.delete('/api/deleteitem/:id',adminController.deleteEmployees)
 
 module.exports=router;

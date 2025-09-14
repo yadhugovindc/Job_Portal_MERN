@@ -9,8 +9,11 @@ import axios from "axios";
 
 const Jobs = () => {
   const {isAuth,setIsAuth}=useContext(Appcontext);
+   const [searchQuery, setSearchQuery] = useState('');
   const navigateTo = useNavigate();
   const [jobsdata,setJobsdata]=useState([])
+
+ const filterItem=jobsdata.filter((item)=>item.title.toLowerCase().includes(searchQuery.toLowerCase()))
 
   useEffect(()=>{
     fetchJobs()
@@ -31,12 +34,16 @@ const Jobs = () => {
   return (
     <section className="jobs page py-5">
       <div className="container">
-        <h1 className="text-center mb-5 text-white">All Available Jobs</h1>
+        <div className="d-flex justify-content-center align-items-center flex-column">
+         <h1 className="text-center  text-primary">All Available Jobs</h1>
+         <input type="text"  className="form-control w-50 border border-2 border-primary mb-4" placeholder="Search by Name" onChange={(e)=>setSearchQuery(e.target.value)}/>
+        </div>
+       
         <div className="banner row g-4">
           {jobsdata.length > 0 ? (
-            jobsdata.map((element) => (
+            filterItem.map((element) => (
               <div className="col-lg-4 col-md-6" key={element._id}>
-                <div className="card h-100 shadow-lg border-0">
+                <div className="card h-100 border-0">
                   <div className="card-body p-4">
                     <h5 className="card-title fw-bold mb-3">{element.title}</h5>
                     <p className="card-text mb-2">

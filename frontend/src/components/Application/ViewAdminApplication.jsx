@@ -67,14 +67,12 @@ const {isAuth,setIsAuth,user}=useContext(Appcontext);
 
    useEffect(()=>{
     viewApplications();
-   },[])
-
-  
+   },[]) 
 
   const imageBase = "http://localhost:3000/uploads/";
 
   if (!isAuth) {
-    return navigateTo("/");; // simulate navigation
+    return navigateTo("/"); 
   }
 
   return (
@@ -83,7 +81,7 @@ const {isAuth,setIsAuth,user}=useContext(Appcontext);
       <div className="container">
         <div className="row">
           {receivedItem.length>0?receivedItem.map((item) => (
-            <div className="col-6 mt-3" key={item._id}>
+            <div className="col-12 col-md-6 mt-3" key={item._id}>
               <div className="card h-100 border-info">
                 <div className="card-body">
                   <h4 className="card-title">{item.jobTitle}</h4>
@@ -152,7 +150,7 @@ const {isAuth,setIsAuth,user}=useContext(Appcontext);
       <div className="modal-body my-modal-body">
         <label htmlFor="">Update status</label>
        <select name="cars" id="cars" value={update.jobStatus} className='form-control' onChange={(e)=>setUpdate({jobStatus:e.target.value})}>
-            <option value="submitted" >submitted</option>
+            <option value="submitted">submitted</option>
             <option value="viewed" >viewed</option>
             <option value="rejected">rejected</option>
             <option value="accepted">accepted</option>
@@ -180,4 +178,3 @@ const {isAuth,setIsAuth,user}=useContext(Appcontext);
 export default ViewAdminApplication
 
 
-// style={{ background: "#000080", color: "white", borderRadius: "10px" }}
